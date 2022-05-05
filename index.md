@@ -224,6 +224,26 @@ const handleButtons = (toast) => {
 }
 ```
 
+##### Styling buttons
+
+```js
+const advanced = {
+  buttons: {
+   options: [
+   {
+	name: 'Accept',
+	class: 'someClass', // optional
+	style: 'someStyle: somevalue;' // optional
+   },
+   'Reject',
+   'Shake'
+   ],
+   position: 'in_title' | 'in_body',
+   callback: handleButtons
+  },
+}
+```
+
 ### Show the toast
 
 ```js
