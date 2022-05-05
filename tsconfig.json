@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "lib": ["es6", "dom", "es2017"],
+      "target": "es5",
+      "module": "commonjs",
+      "declaration": true,
+      "outDir": "./lib",
+      "strict": true,
+      "watch": true
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "**/__tests__/*"]
+  }

@@ -1,0 +1,8 @@
+{
+	"extends": ["tslint:recommended", "tslint-config-prettier"],
+	"rules": {
+		"radix": false,
+		"prefer-for-of": false,
+		"object-literal-shorthand": false
+	}
+}
