@@ -13,7 +13,7 @@ interface Advacned {
 	hDistance: number;
 	onClick: () => void | null;
 	buttons: {
-		options: string[] | ButtonOptions[];
+		options: (string | ButtonOptions)[];
 		callBack: (toast: Trigger) => void;
 		position: 'in_title' | 'in_body';
 	} | null;

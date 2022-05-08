@@ -25,16 +25,21 @@ const handleButtons = (element: HTMLDivElement, options: Options): HTMLDivElemen
 
 	advanced.buttons?.options.forEach((value, index) => {
 		const question = document.createElement('button');
+		let selected: string;
 
 		if (typeof value === 'string') {
 
 			question.innerHTML = value;
+
+			selected = value;
 
 			defaultButtonStyle(question);
 
 		} else {
 
 			question.innerHTML = value.name;
+
+			selected = value.name;
 
 			if (value.style !== undefined || value.class !== undefined) {
 
@@ -55,7 +60,7 @@ const handleButtons = (element: HTMLDivElement, options: Options): HTMLDivElemen
 		trigger = trigger.setOption(question);
 
 		question.addEventListener('click', () => {
-			trigger = trigger.setValue(value);
+			trigger = trigger.setValue(selected);
 			advanced.buttons?.callBack(trigger);
 		});
 
